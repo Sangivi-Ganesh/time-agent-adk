@@ -4,19 +4,30 @@ A simple AI agent built using **Google's Agent Development Kit (ADK)** and **Gem
 
 ---
 
-## 💡 Features
-- Uses the Gemini LLM through Google ADK
-- Understands city names (like Tokyo, London, Mumbai)
-- Returns the current local time using `pytz`
-- Can be expanded with more tools later!
+## 🚀 Running the Agent
 
----
-
-## ⚙️ Requirements
-- Python 3.10+
-- google-adk
-- pytz
-
-Install them with:
+### Clone this repo:
 ```bash
-pip install google-adk pytz
+git clone https://github.com/Sangivi-Ganesh/time-agent-adk.git
+cd time-agent-adk
+
+###Activate your virtual environment:
+python -m venv .venv
+.\.venv\Scripts\activate
+
+###Run your agent: 
+adk run my_agent
+
+###Example interaction:
+[user]: What time is it in Tokyo?
+[time_agent]: The current time in Tokyo is 08:42 PM.
+
+
+🧠 How it works
+The agent uses a simple tool function:
+def get_current_time(city: str) -> dict:
+
+🫶 Credits
+Built while learning Google ADK and Gemini
+Inspired by the Kaggle “Your First AI Agent” course ✨
+
